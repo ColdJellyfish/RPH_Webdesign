@@ -1,0 +1,116 @@
+*{
+    transition: 1s linear;
+}
+body {
+    background-image: url("../img/background/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.wrapper {
+    position: relative;
+    top: -20px;
+    width: 94em;
+    margin: 0 auto;
+
+}
+.wrapper div {
+    position: relative;
+    margin: 0 auto;
+    width: 90em;
+    height: 50em;
+    border-bottom: 2px solid black;
+
+}
+/* Entry Design*/
+span img.entry-image {
+    position: absolute;
+    width: 60%;
+    top: -50px;
+    filter: drop-shadow(50px 50px 4px black);
+}
+span .entry-title {
+    position: absolute;
+    top: 2em;
+    left: 10.4em;
+    color: black;
+    letter-spacing: 5px;
+    font-size: 85px;
+    font-weight: bold;
+    font-style:italic;
+    text-shadow: 2px 2px white;
+    transition: color .3s ease-in-out, color .3s ease-in-out;
+}
+span .entry-title:hover{
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+div button.download-btn {
+    position: relative;
+    top:38em;
+    left: 80em;
+    height: 60px;
+    width: 310px;
+    border-radius: 20px;
+    background-color:black;
+    transition: color .6s ease-in-out, color .6s ease-in-out;
+}
+div button.download-btn:hover{
+    background-color:rgb(39, 39, 39);
+    color: black;
+}
+div button.download-btn a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    display: inline-block;
+}
+div button.download-btn  a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: rgb(255, 255, 255);
+    transition: width .5s;
+}
+div button.download-btn  a:hover::after {
+    width: 100%;
+}
+div .nav {
+    position: relative;
+    list-style-type: none;
+    text-align: right;
+    padding: 25px;
+    border-bottom:3px solid black;
+    
+}
+.nav li{
+    display: inline;
+    margin-bottom: 10px;
+    
+}
+.nav li a {
+    font-size: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    padding: 12px;
+    margin-right: 24px;
+    display: inline-block;
+}
+
+.nav li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+}
+.nav li a:hover::after {
+    width: 100%;
+}
+
